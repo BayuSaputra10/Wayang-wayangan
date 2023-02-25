@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <header class="nav-container">
+      <nav class="nav-list">
+        <ul>
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#tokoh">Tokoh</a></li>
+          <li><a href="#masukan">Masukan</a></li>
+          <li><a href="#tentang">Tentang Saya</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="content">
+        <div class="bg-image">
+          <div class="image">
+            <img src="asset/logo.png" alt="Icon-saya" />
+          </div>
+          <div class="title">
+            <p>
+              Melalui tokoh-tokoh pewayangan, kita bisa mengkritisi dan membedah
+              persoalan bangsa serta memberikan alternatif solusinya
+            </p>
+            <p><strong>Sudjiwo Tejo,dalam Abimanyu Anak Rembulan</strong></p>
+          </div>
+          <button onclick="telusuri()">Telusuri</button>
+        </div>
+      </div>
+
+      <section>
+        <h1 id="tokoh">Tokoh</h1>
+      </section>
+      <div class="cards">
+        <article class="card">
+          
+            <img src="./asset/Puntadewa.jpg" alt="Puntadewa" />
+            <p>
+              Yudistira, merupakan putra pertama dari Pandu Dewanata dan Dewi
+            Kunti. Yudistira memiliki nama kecil yaitu Raden Puntadewa. Sosok
+            Yudistira digambarkan sebagai penjelmaan Dewa Yama, dan memerintah
+            di Kerajaan Amarta. Tokoh ini memiliki karakter yang sangat
+            bijaksana, hampir tidak pernah berbuat dusta atau berbohong seumur
+            hidupnya, memiliki moral yang sangat tinggi, dan merupakan orang
+            yang pemaaf.
+          </p>
+        </article>
+          <article class="card">
+          <img src="./asset/werkudara.jpg" alt="werkudara" />
+          <p>
+            Bima. Memiliki nama lain yaitu Bratasena, Balawa, Birawa,
+            Dandungwacana, Nagata, Kusumayuda, Kowara, Pandusiwi, Bayusuta,
+            Sena, Wekudara, Wijasena, dan Jagal Abilawa. Bima merupakan putra
+            kedua dari Pandu Dewanata dan Dewi Kunti. Bima digambarkan sebagai
+            jelmaan dari Dewa Bayu, yang bertempat tinggal di Kadipaten Jodipati
+            di wilayah Indraprastha. Tokoh ini digambarkan sebagai sosok yang
+            kuat, bersifat kasar, dan menakutkan di mata musuh, namun memiliki
+            hati yang sangat lembut. Bima memiliki senjata istimewa, yakni Gada
+            Rujakpala dan Kuku Pancanaka. Bima memiliki sifat yang gagah berani,
+            teguh, kuat, tabah, patuh, dan jujur.
+          </p>
+          </article>
+
+          <article class="card">
+          <img src="./asset/Arjuna.jpg" alt="Arjuna" />
+          <p>
+            Arjuna. Memiliki nama lain yaitu Permadi, Janaka, Wibatsuh, Parta,
+            Dananjaya, dan Palguna. Arjuna merupakan putra bungsu dari Prabu
+            Dewanata dengan Dewi Kunti. Arjuna merupakan penjelmaan dari Dewa
+            Indra, yang memimpin kerajaan di Madukara. Dia digambarkan sebagai
+            sosok ksatria yang cerdik dan gemar berkelana, bertapa, dan menuntut
+            ilmu. Arjuna adalah tokoh yang mahir dalam ilmu peperangan. Dia juga
+            memiliki beberapa senjata sakti, yaitu Panah Pasupati, Busur
+            Gandiwa, dan Terompet Dewadatta. Arjuna digambarkan memiliki
+            karakter yang mulia, berjiwa ksatria, mempunyai iman yang kuat, dan
+            gagah berani.
+          </p>
+          </article> 
+
+          <article class="card">
+          <img src="./asset/Nakula.jpg" alt="Nakula" />
+          <p>
+            Nakula. Memilik nama kecil Pinten, dan merupakan salah satu putra
+            kembar dari pasangan Pandu dan Dewi Madrim. Nakula merupakan
+            penjelmaan dari Dewa Kembar Aswin (dewa pengobatan). Nakula
+            digambarkan sebagai sosok yang pandai dalam memainkan senjata. Dia
+            merupakan seorang ksatria pedang yang tangguh. Arjuna memiliki
+            karakter jujur, setia, taat pada orang tua, dapat menjaga rahasia,
+            dan suka membalas budi.
+          </p>
+          </article>
+
+          <article class="card">
+          <img src="./asset/Sadewa.jpg" alt="Sadewa" />
+          <p>
+            Sadewa. Memiliki nama kecil Tangsen, dan merupakan salah satu putra
+            kembar dari Pandu dan Dewi Madrim. Sadewa merupakan penjelmaan dari
+            Dewa Kembar Aswin. Sadewa digambarkan sebagai sosok yang ahli dalam
+            ilmu astronomi. Dia memiliki karakter rajin, bijaksana, setia, taat
+            pada orang tua, dapat menjaga rahasia, dan suka membalas budi.
+          </p>
+        </article>
+    </div>
+
+    <section>
+      <h1 id="masukan">Masukan</h1>
+      <div class="masukan">
+        <input type="text" name="nama" placeholder="Nama Anda...."></input>
+        <input type="email" name="email" placeholder="Email Anda...."></input>
+        <textarea id="deskripsi" rows="3" placeholder="Masukan"></textarea>
+        <input type="submit" value="submit">
+      </div>
+    </section>
+
+    <aside>
+      <h1 id="tentang">Tentang Saya</h1>
+    <div class="tentang">
+        <img src="./asset/foto-saya.jpg" alt="Foto-saya">
+        <h3>Nama</h3>
+        <p>Bayu Saputra</p>
+        <h3>Alamat</h3>
+        <p>Bandar Lampung ,Lampung</p>
+        
+    </div>
+    </aside>
+
+    </main>
+
+
+    <footer>
+      <p>Website ini saya untuk submission saya dalam kelas front-end ini <strong>-Bayu Saputra</strong></p>
+    </footer>
+  </body>
+</html>

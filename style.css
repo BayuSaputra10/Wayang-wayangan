@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Quicksand:wght@500;700&family=Roboto+Mono:wght@100&display=swap');
+
+
+*,*::before,*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+
+body {
+    height: 100vh;
+    font-family: 'Quicksand',sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+header.nav-container{
+    width: 100%;
+}
+
+header.nav-container .logo {
+    height: 10px;
+}
+
+header.nav-container .nav-list ul {
+    display: flex;
+    justify-content: space-around;
+    gap:2rem;
+    background-color: #eaeaea;
+    padding: 15px;
+    box-shadow: 5px 10px #888888;
+    background-image: linear-gradient(to right top, #826400, #583900, #ab8d66, #816144, #573824);
+  }
+
+header.nav-container li {
+    list-style-type: none;
+}
+
+header.nav-container .nav-list li a{
+    text-decoration: none;
+    color: black;
+    transition: all .25s ease-in-out;
+}
+
+header.nav-container .nav-list li a:hover{
+    background-color: #eaeaea;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+main {
+    width: 100%;
+    margin-inline: auto;
+    gap: .9rem;
+   
+}
+
+
+
+main .content{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    border-bottom:7px solid #826400;
+    background-image: url(./asset/background.jpg);
+    background-size: cover;
+    padding: 100px;
+  
+}
+
+main .content .bg-image{
+    background-image: url("/asset/background.jpg");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+    border: 2px solid #eaeaea;
+    transition: 2s;
+    width: 70%;
+
+}
+
+main .content .image{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    background-color: #eaeaea;
+    border: 2px solid wheat;
+    border-radius: 50%;
+}
+main .content p {
+    font-family: 'Playfair Display',sans-serif;
+    margin-top: 10px;
+    margin-right: 50px;
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px #eaeaea;
+    
+}
+
+main .content button{
+    padding: .8rem 2.5rem;
+    margin-block-start: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Quicksand',sans-serif;
+    color: white;
+
+
+    border: 3px solid transparent;
+    border-radius: 999px;
+    background-color:#ab8d66;
+    cursor: pointer;
+    transition: all .30s ease-in;
+
+
+}
+
+main .content button:hover{
+    
+    background-color: white;
+    color: #826400;
+
+}
+
+main .cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    background-image: linear-gradient(to right top, #826400, #583900, #ab8d66, #816144, #573824);
+  }
+  main #tokoh{
+    font-family:'Playfair Display';
+    font-style: oblique;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 30px 0px 30px 0px;
+  }
+  main .card {
+    flex: 3;
+    margin: 10px 10px;
+    padding: 1rem 1rem;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(249, 249, 249, 0.3);
+    transition: all 1s ease-in-out;
+  } 
+  main .card img {
+    height: 50%;
+    width: auto;
+  }
+
+  main #masukan{
+    font-family:'Playfair Display';
+    font-style: oblique;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 30px 0px 30px 0px;
+  }
+
+  main .masukan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+    margin-inline:50vh;
+    border: 2px solid #ab8d66;
+    margin-bottom: 100px;
+    box-shadow: 3px 3px 6px 0px  rgba(255, 158, 13, 0.893);
+  }
+
+  main .masukan input , textarea{
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 10px 0px;
+  }
+
+main aside {
+    justify-content: center;
+
+}
+
+  main aside .tentang img{
+
+    width: 15%;
+    border-radius:50% ;
+    border:2px solid #888888
+  }
+  main aside #tentang{
+    font-family:'Playfair Display';
+    font-style: oblique;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 30px 0px 30px 0px;
+  }
+
+  main aside .tentang p{
+    background-color: #826400;
+  }
+
+  main aside .tentang {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    border: 2px double #888888;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+
+  footer {
+    background-color: #686868;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    color: #eaeaea;
+  }
+
+  @media screen and (max-width: 992px) {
+    main .bg-image p{
+      font-size: small;
+    }
+    main .bg-image .image{
+      background: none;
+      border:none;
+      width: auto;
+    }
+
+    main .masukan {
+      background-image: url(./asset/icon-saya.png);
+      margin: 0;
+      background-position:center;
+      background-repeat: no-repeat;
+    }
+  }
+
